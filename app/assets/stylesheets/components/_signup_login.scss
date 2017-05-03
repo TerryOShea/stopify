@@ -9,21 +9,6 @@
   }
 }
 
-.fb-signup-btn, .submit-signup-btn, .fb-login-btn, .submit-login-btn {
-  color: #fff;
-  text-transform: uppercase;
-  display: flex;
-  margin: 10px 5px;
-  font-weight: 600;
-  font-size: 0.9em;
-  letter-spacing: 1.5px;
-  font-family: $title;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  height: 50px;
-}
-
 .fb-signup-btn, .fb-login-btn {
   background-color: $facebook;
   width: 100%;
