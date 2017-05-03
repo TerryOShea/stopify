@@ -1,0 +1,40 @@
+.main-header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 10vw;
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+.header-links {
+  display: flex;
+  font-family: $title;
+
+  li:not(.header-links-divider) {
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+      color: $seagreen;
+      cursor: pointer;
+    }
+  }
+}
+
+.header-links-divider {
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 15px;
+
+  &:hover {
+    cursor: default;
+  }
+}

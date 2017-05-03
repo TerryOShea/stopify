@@ -1,12 +1,15 @@
-.signup-form-box {
+.signup-form-box, .login-form-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
   margin: 0 auto;
+  @include for-phone-only {
+    width: 90vw;
+  }
 }
 
-.fb-signup-btn, .submit-signup-btn {
+.fb-signup-btn, .submit-signup-btn, .fb-login-btn, .submit-login-btn {
   color: #fff;
   text-transform: uppercase;
   display: flex;
@@ -21,16 +24,34 @@
   height: 50px;
 }
 
-.fb-signup-btn {
+.fb-signup-btn, .fb-login-btn {
   background-color: $facebook;
-  width: 400px;
+  width: 100%;
 }
 
-.submit-signup-btn {
+.submit-signup-btn, .submit-login-btn {
   background-color: $green;
 }
 
-.signup-title-box {
+.submit-login-btn {
+  width: 200px;
+}
+
+.submit-login-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  p {
+    color: $gray;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.signup-title-box, .login-title-box {
   width: 100%;
   text-align: center;
   border-top: 1px solid $lightgray;
@@ -51,11 +72,11 @@
   }
 }
 
-.signup-form {
+.signup-form, .login-form {
   display: flex;
   flex-direction: column;
   color: black;
-  width: 400px;
+  width: 100%;
 }
 
 .session-link {

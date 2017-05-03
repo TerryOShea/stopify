@@ -45,6 +45,7 @@ class Signup extends React.Component {
           <form className="signup-form" onSubmit={this.handleSubmit}>
             <input
               type="email"
+              autoFocus="true"
               placeholder="Email"
               value={this.state.email}
               onChange={this.update('email')} />
