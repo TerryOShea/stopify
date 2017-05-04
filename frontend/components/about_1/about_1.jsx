@@ -4,10 +4,10 @@ const About1 = () => (
   <section className="about-1">
     <section className="about-1-left">
       <section className="about-1-songs">
-        <div className="about-1-song"></div>
-        <div className="about-1-song"></div>
-        <div className="about-1-song"></div>
-        <div className="about-1-song"></div>
+        <div className="about-1-song">album cover</div>
+        <div className="about-1-song">album cover</div>
+        <div className="about-1-song">album cover</div>
+        <div className="about-1-song">album cover</div>
       </section>
     </section>
     <section className="about-1-right">

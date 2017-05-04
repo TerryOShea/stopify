@@ -1,0 +1,144 @@
+.about-2 {
+  display: flex;
+  padding: 140px;
+  position: relative;
+
+  background: transparentize($pink, 0.2);
+  background: -moz-linear-gradient(45deg, transparentize($pink, 0.2) 0%, transparentize($purple, 0.2) 100%);
+  background: -webkit-linear-gradient(45deg, transparentize($pink, 0.2) 0%, transparentize($purple, 0.2) 100%);
+  background: linear-gradient(45deg, transparentize($pink, 0.2) 0%, transparentize($purple, 0.2) 100%);
+}
+
+.about-2-left {
+  width: 35%;
+  color: #fff;
+
+  h2 {
+    font-size: 46px;
+  }
+
+  h4 {
+    color: $seagreen;
+    font-size: 36px;
+    line-height: 0;
+  }
+}
+
+.about-2-right {
+  position: absolute;
+  width: 65%;
+  height: 158%;
+  bottom: -1px;
+  right: -50px;
+  overflow-y: hidden;
+}
+
+.about-2-iPhone {
+  width: 300px;
+  height: 580px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 5px solid $purple;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(30deg);
+
+  .home-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 4px solid $purple;
+  }
+
+  .screen {
+    background-color: #000;
+    color: #fff;
+    width: 92%;
+    height: 75%;
+  }
+
+  .button {
+    position: absolute;
+    left: -7px;
+    top: 15%;
+    width: 2px;
+    height: 25px;
+    background-color: $purple;
+
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background-color: $purple;
+      left: 0;
+    }
+
+    &:after { bottom: -65px; }
+
+    &:before { bottom: -115px; }
+  }
+
+  .speaker {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid $purple;
+    border-radius: 10px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $purple;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $purple;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      left: -25px;
+      top: 1px;
+    }
+  }
+}
+
+.about-2-iPhone:first-of-type {
+  top: 330px;
+  left: 150px;
+}
+
+.about-2-iPhone:nth-of-type(2) {
+  top: 370px;
+  left: 540px;
+}
+
+.about-2-iPhone:nth-of-type(3) {
+  top: 920px;
+  left: 220px;
+}
+
+.about-2-iPhone:nth-of-type(4) {
+  top: 680px;
+  left: 770px;
+}
