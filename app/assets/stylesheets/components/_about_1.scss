@@ -1,0 +1,47 @@
+.about-1 {
+  display: flex;
+  box-sizing: border-box;
+  padding: 150px 140px;
+}
+
+.about-1-left {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.about-1-songs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 540px;
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.about-1-song {
+  width: 270px;
+  height: 270px;
+}
+
+.about-1-song:first-of-type { background-color: red; }
+.about-1-song:nth-of-type(2) { background-color: green;  }
+.about-1-song:nth-of-type(3) { background-color: yellow;  }
+.about-1-song:nth-of-type(4) { background-color: blue;  }
+
+.about-1-right {
+  width: 40%;
+  font-size: 18px;
+
+  h2, h4 {
+    color: $purple
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: 0;
+  }
+}
