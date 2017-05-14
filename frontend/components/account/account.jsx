@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import Hero from './hero/hero';
-import Sidebar from './sidebar/sidebar';
+import Main from './main/main';
 
 const Account = () => (
   <div>
     <Header />
-    <section className="account-main">
+    <section className="account-page">
       <Hero />
-      <Sidebar />
+      <Main />
     </section>
     <Footer />
   </div>
