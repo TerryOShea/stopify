@@ -1,0 +1,56 @@
+.account-sidebar {
+  color: $gray;
+  background-color: $offblack;
+  width: 25%;
+}
+
+.account-sidebar-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  color: lighten($offblack, 10%);
+}
+
+.account-sidebar-list {
+  border-top: 1px solid lighten($offblack, 5%);
+
+  i {
+    width: 70px;
+    text-align: center;
+  }
+
+  .selected-li {
+    color: #fff;
+
+    .highlighter {
+      background-color: $lightgreen;
+    }
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.account-sidebar-li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lighten($offblack, 5%);
+  position: relative;
+
+  .highlighter {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .highlighter {
+      background-color: $lightgreen;
+    }
+  }
+}
